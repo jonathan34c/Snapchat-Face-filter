@@ -9,6 +9,13 @@ As the Snapchat-like face filter became common to see in different apps, the goa
 The goal of the project is to create a snapchat-like face filter using Android ARcore library. Due to the increased usage of such filters, the project would possibly be turned into a SDK. The benefit of creating a SDK instead of an Android App is that it can be implemented to different apps. Therefore, the codes can be reused and less duplicate developments. 
 The preliminary concept of the project is to allow users to submit their own 3D objects and apply them to the face. This would allow a broader range of usage of the SDK. Moreover, the SDK can expand to a broader usage like face swap or sunglass try on filters. 
 In the final stage of the project, a video demo of the SDK will be uploaded to this repository. The video would include the face filter functionality and the implementation of the SDK. If the project did not turn into a SDK, a demonstration of the usage of AR core would still be presented. 
+1. Create Android App for Project
+2. Intergrate ARCore to the Application
+3. Intergrate the ARCore Augment Face in to the application
+4. Detact Face using Arcore, and able to add some simple 3D object
+5. Create complex 3D object and combine with the face detaction
+6. Wrap the project to a SDK and create sample android application which use the SDK to create face filter
+7. Write up detail instructions and requirements for the usage of SDK in readme file
 
 
 
