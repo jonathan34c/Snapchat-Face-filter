@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ARApplication"
 include ':app'
+include ':faceFilter'
