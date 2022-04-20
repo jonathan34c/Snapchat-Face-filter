@@ -16,7 +16,7 @@ In the final stage of the project, a video demo of the SDK will be uploaded to t
 4. ~~Detact Face using Arcore, and able to add some simple 3D object~~
 5. ~~Create complex 3D object and combine with the face detaction~~
 6. ~~Wrap the project to a SDK and create sample android application which use the SDK to create face filter~~
-7. Write up detail instructions and requirements for the usage of SDK in readme file
+7. ~~Write up detail instructions and requirements for the usage of SDK in readme file~~
 
 
 
@@ -31,6 +31,46 @@ Most of the project has finished, I have successfully integrate ARCore and creat
 a video demo can be found here [![Video]](http://www.youtube.com/watch?v=o8Zo42x4ceEE "Video Title")
 The last part of the proejct would be to write a documentation to introduce the SDK and how to integrate the sdk.
 
+# 📓 Implementation Instruction
+# Setup Project
+1. Copy ```faceFilter``` SDK in to your Android Project
+2. In your manifest declare these field within the manifest tag
+  ```
+   <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+   ```
+3. Declare these fields in your application tag
+ ```
+  <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+  ```
 
+# Feed AR objects to the AR activity
+1. Create a list of your AR object from your resource folder like this
+```
+var list = arrayOf("bicycle_face", "fox_face_mesh_texture","anony_face" )
+```
+2. Create a new ArFilterBuilder object
+
+```
+val builder = ArFilterBuilder();
+```
+3. Launch the AR activity with your package name and resource folder name like this
+```
+builder.start(this ,"com.chia.cheng.arapplication", "drawable", list)
+```
+
+Woala, you have got yourself a Snapchat filter !  👨🏼‍🎤
 
