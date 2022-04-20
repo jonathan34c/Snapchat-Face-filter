@@ -74,3 +74,10 @@ builder.start(this ,"com.chia.cheng.arapplication", "drawable", list)
 
 Woala, you have got yourself a Snapchat filter !  👨🏼‍🎤
 
+# 🤹🏻 Demo 
+[![Video]](http://www.youtube.com/watch?v=o8Zo42x4ceEE "Video Title")
+
+
+![Screenshot_20220409-221047](https://user-images.githubusercontent.com/8307131/164127807-e6b70f20-f3b1-46bd-bf54-81a2d39e01a7.png)
+![Screenshot_20220409-221036](https://user-images.githubusercontent.com/8307131/164127811-0b309ed3-e891-4723-92b9-e1981de60da3.png)
+
