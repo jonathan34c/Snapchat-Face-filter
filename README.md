@@ -18,6 +18,11 @@ In the final stage of the project, a video demo of the SDK will be uploaded to t
 6. ~~Wrap the project to a SDK and create sample android application which use the SDK to create face filter~~
 7. ~~Write up detail instructions and requirements for the usage of SDK in readme file~~
 
+# 🈲 Limitations
+1. Can only load 3D face locally
+2. Does not support area outside of face (can't do ear or hat)
+3. Does not provide default faces. 
+
 
 
 # 🤖 Technology used 
